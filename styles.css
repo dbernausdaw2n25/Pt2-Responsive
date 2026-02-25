@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Contenedor de fondos */
+.backgrounds {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+/* Estilos para cada fondo */
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: none;
+}
+
+.bg.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Contenido estático */
+.content {
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+}
+
+/* Animaciones laterales */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.bg.slide-in {
+    animation: slideInRight 0.6s ease-out forwards;
+}
+
+.bg.slide-out {
+    animation: slideOutLeft 0.6s ease-out forwards;
+}
+
+/* Fondos específicos */
+.home {
+    background-image: url(/Pt2-Responsive/img/background.jpg);
+}
+
+.container {
+    background-image: url(/Pt2-Responsive/img/sinnoh.png);
+    filter: blur(2px) brightness(0.95) contrast(1.05);
+}
+
+.container2 {
+    background-image: url(/Pt2-Responsive/img/jhoto.png);
+    filter: blur(2px) brightness(0.95) contrast(1.05);
+}
+
+.container3 {
+    background-image: url(/Pt2-Responsive/img/Kanto.jpg);
+    filter: blur(2px) brightness(0.95) contrast(1.05);
+}
+
+.header {
+    padding: 30px 20px 20px;
+    text-align: center;
+    color: #FFCB05;
+    text-shadow: 3px 3px 0px #3D7DCA, -1px -1px 0px #003A70;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.header h1 {
+    font-size: clamp(1rem, 4vw, 2rem);
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.header p {
+    font-size: clamp(0.5rem, 2vw, 0.8rem);
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+nav {
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+ul li {
+    width: auto;
+}
+
+ul li a {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #FFCB05;
+    color: #3D7DCA;
+    text-decoration: none;
+    border: 4px solid #3D7DCA;
+    border-radius: 10px;
+    font-size: clamp(0.5rem, 1.5vw, 0.8rem);
+    font-weight: bold;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3);
+    transition: all 0.1s ease;
+    text-transform: uppercase;
+}
+
+ul li a:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+    background: #FFD93D;
+}
+
+ul li a:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
