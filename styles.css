@@ -173,3 +173,166 @@ main.sinnoh {
     transition: all 0.5s ease;  
     background: #dbeafe;
 }
+
+/* botón usado en Johto (reusa apariencia de los enlaces de navegación) */
+.region-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #FFCB05;
+    color: #3D7DCA;
+    text-decoration: none;
+    border: 4px solid #3D7DCA;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* modal */
+.modalJohto {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modalJohto.show {
+    display: flex;
+}
+.modal-content-Johto {
+    position: relative;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content-Johto img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.closeJohto {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+.ciudadJohto1 {
+    position: absolute;
+    top: 27%;
+    left: 41%;
+    z-index: 10;
+    background-color: rgb(255, 0, 242);
+    width: 7%;
+    height: 13%;
+}
+
+.ciudadJohto2 {
+    position: absolute;
+    top: 44%;
+    left: 33%;
+    z-index: 10;
+    background-color: rgb(255, 0, 242);
+    width: 7%;
+    height: 13%;
+}
+
+.ciudadJohto3 {
+    position: absolute;
+    top: 44%;
+    left: 49%;
+    z-index: 10;
+    background-color: rgb(255, 0, 242);
+    width: 7%;
+    height: 13%;
+}
+
+.ciudadJohto4 {
+    position: absolute;
+    top: 33%;
+    left: 55%;
+    z-index: 10;
+    background-color: rgb(255, 0, 242);
+    width: 5%;
+    height: 8%;
+}
+.ciudadJohto5 {
+    position: absolute;
+    top: 27%;
+    left: 65%;
+    z-index: 10;
+    background-color: rgb(255, 0, 242);
+    width: 7%;
+    height: 13%;
+}
+.ciudadJohto6 {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    z-index: 10;
+    background-color: rgb(255, 0, 242);
+    width: 10%;
+    height: 13%;
+}
+.ciudadJohto7 {
+    position: absolute;
+    top: 60%;
+    left: 24%;
+    z-index: 10;
+    background-color: rgb(255, 0, 242);
+    width: 5%;
+    height: 13%;
+}
+.ciudadJohto8 {
+    position: absolute;
+    top: 71%;
+    left: 55%;
+    z-index: 10;
+    background-color: rgb(255, 0, 242);
+    width: 7%;
+    height: 8%;
+}
+.ciudadJohto9 {
+    position: absolute;
+    top: 71%;
+    left: 65%;
+    z-index: 10;
+    background-color: rgb(255, 0, 242);
+    width: 7%;
+    height: 8%;
+}
+.ciudadJohto10 {
+    position: absolute;
+    top: 82%;
+    left: 44%;
+    z-index: 10;
+    background-color: rgb(255, 0, 242);
+    width: 7%;
+    height: 8%;
+}
+.ciudadJohto11 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    z-index: 10;
+    background-color: rgb(255, 0, 242);
+    width: 12%;
+    height: 13%;
+}
+.ciudadJohto12 {
+    position: absolute;
+    top: 40%;
+    left: 76%;
+    z-index: 10;
+    background-color: rgb(255, 0, 242);
+    width: 10%;
+    height: 20%;
+}

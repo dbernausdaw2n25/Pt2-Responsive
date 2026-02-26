@@ -37,3 +37,23 @@ links.forEach(link => {
         changeBackground(region);
     });
 });
+
+// --- modal para el mapa de Johto ---
+const openMapaBtn = document.getElementById('openMapaJohto');
+const mapModalJohto = document.getElementById('mapModalJohto');
+const closeMapaJohto = document.getElementById('closeMapaJohto');
+
+if (openMapaBtn && mapModalJohto && closeMapaJohto) {
+    openMapaBtn.addEventListener('click', e => {
+        e.preventDefault();
+        mapModalJohto.classList.add('show');
+    });
+
+    closeMapaJohto.addEventListener('click', () => {
+        mapModalJohto.classList.remove('show');
+    });
+}
+
+function ciudadJohto1() {
+  alert("asd");
+}
