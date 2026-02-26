@@ -46,7 +46,7 @@ html, body {
 
 .bg.container {
     background-image: url(img/sinnoh.png);
-    filter: blur(2px) brightness(0.95) contrast(1.05);
+    filter:  brightness(0.95) contrast(1.05);
         background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,7 +54,7 @@ html, body {
 
 .bg.container2 {
     background-image: url(img/jhoto.png);
-    filter: blur(2px) brightness(0.95) contrast(1.05);
+    filter:  brightness(0.95) contrast(1.05);
         background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -62,7 +62,7 @@ html, body {
 
 .bg.container3 {
     background-image: url(img/Kanto.jpg);
-    filter: blur(2px) brightness(0.95) contrast(1.05);
+    filter:  brightness(0.95) contrast(1.05);
         background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
