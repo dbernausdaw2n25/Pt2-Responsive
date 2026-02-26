@@ -4,6 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Press Start 2P', cursive;
+    scrollbar-gutter: stable;
 }
 
 /* ================= HERO ================= */
@@ -38,21 +39,33 @@ html, body {
 
 .bg.home {
     background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .bg.container {
     background-image: url(img/sinnoh.png);
     filter: blur(2px) brightness(0.95) contrast(1.05);
+        background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .bg.container2 {
     background-image: url(img/jhoto.png);
     filter: blur(2px) brightness(0.95) contrast(1.05);
+        background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .bg.container3 {
     background-image: url(img/Kanto.jpg);
     filter: blur(2px) brightness(0.95) contrast(1.05);
+        background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Animaciones hero */
@@ -123,10 +136,11 @@ ul li a {
 main {
     display: none;
     padding: 60px 40px;
-    
+    transition: all 0.5s ease;
 }
 
 main.active {
+    transition: all 0.5s ease;
     display: block;
 }
 
@@ -134,9 +148,16 @@ main.active {
 
 main.home {
     background: #111;
+    transition: all 0.5s ease;
+}
+
+main.home.active {
+    display: none;
+    transition: all 0.5s ease;
 }
 
 main.kanto {
+    transition: all 0.5s ease;
     background: linear-gradient(to bottom, #ff0000, #ffffff);
     min-height: 100vh;
 }
@@ -144,9 +165,11 @@ main.kanto {
 main.johto {
     background: #f5f5f5;
     min-height: 100vh;
+    transition: all 0.5s ease;
 }
 
 main.sinnoh {
     min-height: 100vh;
+    transition: all 0.5s ease;  
     background: #dbeafe;
 }
