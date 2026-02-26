@@ -37,21 +37,21 @@ html, body {
 /* Fondos hero */
 
 .bg.home {
-    background-image: url(/Pt2-Responsive/img/background.jpg);
+    background-image: url(img/background.jpg);
 }
 
 .bg.container {
-    background-image: url(/Pt2-Responsive/img/sinnoh.png);
+    background-image: url(img/sinnoh.png);
     filter: blur(2px) brightness(0.95) contrast(1.05);
 }
 
 .bg.container2 {
-    background-image: url(/Pt2-Responsive/img/jhoto.png);
+    background-image: url(img/jhoto.png);
     filter: blur(2px) brightness(0.95) contrast(1.05);
 }
 
 .bg.container3 {
-    background-image: url(/Pt2-Responsive/img/Kanto.jpg);
+    background-image: url(img/Kanto.jpg);
     filter: blur(2px) brightness(0.95) contrast(1.05);
 }
 
