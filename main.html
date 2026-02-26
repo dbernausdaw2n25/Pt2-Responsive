@@ -2,66 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokeWeb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Fondos -->
-    <div class="backgrounds">
-        <!-- Cada fondo tiene una clase para su region y un id para ser seleccionado por el data mediante el JS-->
-        <div class="bg home active" id="bg-home"></div>
-        <div class="bg container" id="bg-sinnoh"></div>
-        <div class="bg container2" id="bg-johto"></div>
-        <div class="bg container3" id="bg-kanto"></div>
-    </div>
 
-    <!-- Header y nav bars Compartidos en todas las pestañas -->
-    <section class="content">
-        <div class="header">
-            <h1>Bienvenido a PokeWeb</h1>
-            <p>Elige una region para empezar a buscar</p>
+    <!-- HERO 100vh -->
+    <section class="hero">
+
+        <div class="backgrounds">
+            <div class="bg home active" id="bg-home"></div>
+            <div class="bg container" id="bg-sinnoh"></div>
+            <div class="bg container2" id="bg-johto"></div>
+            <div class="bg container3" id="bg-kanto"></div>
         </div>
-        <nav>
-            <ul>
-                <!--No sabia que se podian hacer data-* y crear un "atributo para almacenar informacion" -->
-                <li><a href="#" data-region="home">Inicio</a></li>
-                <li><a href="#" data-region="kanto">Kanto</a></li>
-                <li><a href="#" data-region="johto">Johto</a></li>
-                <li><a href="#" data-region="sinnoh">Sinnoh</a></li>
-            </ul>
-        </nav>
 
-        <main class="home active">
+        <div class="hero-content">
+            <div class="header">
+                <h1>Bienvenido a PokeWeb</h1>
+                <p>Elige una region para empezar a buscar</p>
+            </div>
 
-        </main>
-
-        <main class="sinnoh ">
-                <h2>Sinnoh</h2>
-        </main>
-
-        <main class="kanto">
-
-        </main>
-
-        <main class="johto">
-
-        </main>
-
-
+            <nav>
+                <ul>
+                    <li><a href="#" data-region="home">Inicio</a></li>
+                    <li><a href="#" data-region="kanto">Kanto</a></li>
+                    <li><a href="#" data-region="johto">Johto</a></li>
+                    <li><a href="#" data-region="sinnoh">Sinnoh</a></li>
+                </ul>
+            </nav>
+        </div>
 
     </section>
 
+    <!-- Mains -->
+    <main class="home active"></main>
+
+    <main class="sinnoh">
+        <h2>Sinnoh</h2>
+    </main>
+
+    <main class="kanto">
+        <h2>Kanto</h2>
+    </main>
+
+    <main class="johto">
+        <h2>Johto</h2>
+    </main>
+
     <script src="scriptsMain.js"></script>
-       
-    <script>
-
-        
-
-
-
-    </script>
-      
-
 </body>
 </html>
